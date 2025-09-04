@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>多機能翻訳アプリ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./static/style.css" />
+  </head>
+
+  <body>
+    <h1>多機能翻訳アプリ</h1>
+
+    <p>翻訳する文章</p>
+    <select id="source-language">
+      <option value="ja">日本語</option>
+      <option value="en">英語</option>
+      <option value="es">スペイン語</option>
+      <option value="fr">フランス語</option>
+    </select>
+    <div>
+      <textarea id="input-text"></textarea>
+    </div>
+
+    <p>翻訳後の文章（英語）</p>
+    <select id="target-language">
+      <option value="en">英語</option>
+      <option value="ja">日本語</option>
+      <option value="es">スペイン語</option>
+      <option value="fr">フランス語</option>
+    </select>
+    <div>
+      <textarea id="output-text"></textarea>
+    </div>
+
+
+    <p><button onclick="translateText()">翻訳</button></p>
+
+    <script src="https://unpkg.com/axios@1.4.0/dist/axios.min.js"></script>
+    <script src="./static/main.js"></script>
+
+  </body>
+
+</html>

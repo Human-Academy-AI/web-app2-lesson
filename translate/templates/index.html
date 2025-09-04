@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>シンプル翻訳アプリ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./static/style.css" />
+  </head>
+
+  <body>
+    <h1>シンプル翻訳アプリ</h1>
+
+    <p>翻訳する文章（日本語）</p>
+    <textarea id="input-text"></textarea>
+    <p>翻訳後の文章（英語）</p>
+    <textarea id="output-text"></textarea>
+
+    <p><button onclick="translateText()">翻訳</button></p>
+
+    <script src="https://unpkg.com/axios@1.4.0/dist/axios.min.js"></script>
+    <script src="./static/main.js"></script>
+
+  </body>
+
+</html>

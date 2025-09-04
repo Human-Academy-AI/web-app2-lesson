@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>テキスト送受信アプリ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./static/style.css" />
+  </head>
+
+  <body>
+    <h1>テキスト送受信アプリ</h1>
+
+    <textarea id="input-text"></textarea>
+    <p><button onclick="sendText()">テキストを送信＆取得</button></p>
+
+    <span>Pythonからのメッセージ: </span>
+    <span id="textbox"></span>
+
+    <script src="https://unpkg.com/axios@1.4.0/dist/axios.min.js"></script>
+    <script src="./static/main.js"></script>
+
+  </body>
+
+</html>
